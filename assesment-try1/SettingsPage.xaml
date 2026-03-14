@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="assesment_try1.SettingsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Settings"
+    BackgroundColor="#F5F5F5"
+    Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="*,Auto">
+
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout Padding="24,24,24,20" Spacing="16">
+
+                <Label
+                    Text="Settings"
+                    FontSize="28"
+                    FontAttributes="Bold"
+                    TextColor="#222222" />
+
+                <Label
+                    Text="Manage your preferences"
+                    FontSize="14"
+                    TextColor="#888888" />
+
+                <Label
+                    Text="Appearance"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    TextColor="#222222" />
+
+                <Border
+                    BackgroundColor="White"
+                    Padding="20,14"
+                    StrokeThickness="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="14" />
+                    </Border.StrokeShape>
+
+                    <Grid ColumnDefinitions="*,Auto">
+                        <HorizontalStackLayout Spacing="12">
+                            <Label
+                                Text="🌙"
+                                FontSize="24"
+                                VerticalTextAlignment="Center" />
+                            <Label
+                                Text="Dark Mode"
+                                FontSize="15"
+                                TextColor="#333333"
+                                VerticalTextAlignment="Center" />
+                        </HorizontalStackLayout>
+
+                        <Switch Grid.Column="1" />
+                    </Grid>
+                </Border>
+
+                <Label
+                    Text="Notifications"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    TextColor="#222222" />
+
+                <Border
+                    BackgroundColor="White"
+                    Padding="20,14"
+                    StrokeThickness="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="14" />
+                    </Border.StrokeShape>
+
+                    <Grid ColumnDefinitions="*,Auto">
+                        <HorizontalStackLayout Spacing="12">
+                            <Label
+                                Text="🔔"
+                                FontSize="24"
+                                VerticalTextAlignment="Center" />
+                            <Label
+                                Text="Allow Notifications"
+                                FontSize="15"
+                                TextColor="#333333"
+                                VerticalTextAlignment="Center" />
+                        </HorizontalStackLayout>
+
+                        <Switch Grid.Column="1" />
+                    </Grid>
+                </Border>
+
+                <Label
+                    Text="About"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    TextColor="#222222" />
+
+                <Border
+                    BackgroundColor="White"
+                    Padding="20,16"
+                    StrokeThickness="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="14" />
+                    </Border.StrokeShape>
+
+                    <VerticalStackLayout Spacing="10">
+                        <Label
+                            Text="Version: 1.0.0"
+                            FontSize="14"
+                            TextColor="#555555" />
+                        <Label
+                            Text="Release Date: 2024-06-10"
+                            FontSize="14"
+                            TextColor="#555555" />
+                        <Label
+                            Text="Power Hunter - Battery Usage Tracker"
+                            FontSize="14"
+                            TextColor="#555555" />
+                    </VerticalStackLayout>
+                </Border>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Grid
+            Grid.Row="1"
+            Padding="0,8,0,24"
+            BackgroundColor="#F5F5F5"
+            ColumnDefinitions="*,*,*">
+
+            <VerticalStackLayout
+                Grid.Column="0"
+                Spacing="2"
+                HorizontalOptions="Center">
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnHomeTapped" />
+                </VerticalStackLayout.GestureRecognizers>
+                <Label
+                    Text="🏠"
+                    FontSize="24"
+                    HorizontalTextAlignment="Center" />
+                <Label
+                    Text="Home"
+                    FontSize="12"
+                    TextColor="#636363"
+                    HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout
+                Grid.Column="1"
+                Spacing="2"
+                HorizontalOptions="Center">
+                <Label
+                    Text="⚙️"
+                    FontSize="24"
+                    HorizontalTextAlignment="Center" />
+                <Label
+                    Text="Settings"
+                    FontSize="12"
+                    TextColor="#4CAF50"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout
+                Grid.Column="2"
+                Spacing="2"
+                HorizontalOptions="Center">
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnAboutTapped" />
+                </VerticalStackLayout.GestureRecognizers>
+                <Label
+                    Text="ℹ️"
+                    FontSize="24"
+                    HorizontalTextAlignment="Center" />
+                <Label
+                    Text="About"
+                    FontSize="12"
+                    TextColor="#636363"
+                    HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+
+        </Grid>
+    </Grid>
+</ContentPage>

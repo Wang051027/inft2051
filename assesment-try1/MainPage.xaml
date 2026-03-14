@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="assesment_try1.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Power Hunter"
+    BackgroundColor="#F5F5F5"
+    Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="*,Auto">
+
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout Padding="24,24,24,10" Spacing="20">
+
+                <VerticalStackLayout Spacing="2">
+                    <Label
+                        Text="Power Hunter"
+                        FontSize="28"
+                        FontAttributes="Bold"
+                        TextColor="#222222" />
+                    <Label
+                        Text="Battery Usage Tracker"
+                        FontSize="14"
+                        TextColor="#888888" />
+                </VerticalStackLayout>
+
+                <Border
+                    BackgroundColor="#43A047"
+                    StrokeThickness="0"
+                    Padding="20,16">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="16" />
+                    </Border.StrokeShape>
+
+                    <VerticalStackLayout Spacing="4">
+                        <Label
+                            Text="Today's Usage"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            TextColor="White" />
+                        <Label
+                            x:Name="UsagePercentageLabel"
+                            Text="38.9%"
+                            FontSize="40"
+                            FontAttributes="Bold"
+                            TextColor="White" />
+                        <Label
+                            Text="7 sessions"
+                            FontSize="14"
+                            TextColor="#E8F5E9" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <HorizontalStackLayout
+                    HorizontalOptions="Center"
+                    Spacing="8">
+                    <Button
+                        Text="Day"
+                        WidthRequest="120"
+                        BackgroundColor="#4CAF50"
+                        TextColor="White"
+                        BorderColor="#388E3C"
+                        BorderWidth="2"
+                        FontAttributes="Bold"
+                        CornerRadius="10" />
+                    <Button
+                        Text="Week"
+                        WidthRequest="120"
+                        BackgroundColor="Transparent"
+                        TextColor="#4CAF50"
+                        BorderColor="#C8E6C9"
+                        BorderWidth="2"
+                        FontAttributes="Bold"
+                        CornerRadius="10" />
+                </HorizontalStackLayout>
+
+                <VerticalStackLayout Spacing="10">
+                    <Label
+                        Text="Select App"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        TextColor="#222222" />
+
+                    <ScrollView Orientation="Horizontal">
+                        <HorizontalStackLayout Spacing="8">
+
+                            <Border BackgroundColor="White" Stroke="#EEEEEE" StrokeThickness="1" WidthRequest="90" HeightRequest="110">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="12" />
+                                </Border.StrokeShape>
+                                <VerticalStackLayout Spacing="6" HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Label Text="🎮" FontSize="30" HorizontalTextAlignment="Center" />
+                                    <Label Text="PUBG Game" FontSize="12" HorizontalTextAlignment="Center" TextColor="#333333" />
+                                </VerticalStackLayout>
+                            </Border>
+
+                            <Border BackgroundColor="White" Stroke="#EEEEEE" StrokeThickness="1" WidthRequest="90" HeightRequest="110">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="12" />
+                                </Border.StrokeShape>
+                                <VerticalStackLayout Spacing="6" HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Label Text="🎬" FontSize="30" HorizontalTextAlignment="Center" />
+                                    <Label Text="Netflix" FontSize="12" HorizontalTextAlignment="Center" TextColor="#333333" />
+                                </VerticalStackLayout>
+                            </Border>
+
+                            <Border BackgroundColor="White" Stroke="#EEEEEE" StrokeThickness="1" WidthRequest="90" HeightRequest="110">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="12" />
+                                </Border.StrokeShape>
+                                <VerticalStackLayout Spacing="6" HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Label Text="📷" FontSize="30" HorizontalTextAlignment="Center" />
+                                    <Label Text="Camera" FontSize="12" HorizontalTextAlignment="Center" TextColor="#333333" />
+                                </VerticalStackLayout>
+                            </Border>
+
+                            <Border BackgroundColor="White" Stroke="#EEEEEE" StrokeThickness="1" WidthRequest="90" HeightRequest="110">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="12" />
+                                </Border.StrokeShape>
+                                <VerticalStackLayout Spacing="6" HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Label Text="🎵" FontSize="30" HorizontalTextAlignment="Center" />
+                                    <Label Text="Music" FontSize="12" HorizontalTextAlignment="Center" TextColor="#333333" />
+                                </VerticalStackLayout>
+                            </Border>
+
+                            <Border BackgroundColor="White" Stroke="#EEEEEE" StrokeThickness="1" WidthRequest="90" HeightRequest="110">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="12" />
+                                </Border.StrokeShape>
+                                <VerticalStackLayout Spacing="6" HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Label Text="▶️" FontSize="30" HorizontalTextAlignment="Center" />
+                                    <Label Text="YouTube" FontSize="12" HorizontalTextAlignment="Center" TextColor="#333333" />
+                                </VerticalStackLayout>
+                            </Border>
+
+                            <Border BackgroundColor="White" Stroke="#EEEEEE" StrokeThickness="1" WidthRequest="90" HeightRequest="110">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="12" />
+                                </Border.StrokeShape>
+                                <VerticalStackLayout Spacing="6" HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Label Text="🌐" FontSize="30" HorizontalTextAlignment="Center" />
+                                    <Label Text="Chrome" FontSize="12" HorizontalTextAlignment="Center" TextColor="#333333" />
+                                </VerticalStackLayout>
+                            </Border>
+
+                        </HorizontalStackLayout>
+                    </ScrollView>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Spacing="10">
+                    <Label
+                        Text="Battery Trend"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        TextColor="#222222" />
+
+                    <Border BackgroundColor="White" HeightRequest="200" StrokeThickness="0">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="14" />
+                        </Border.StrokeShape>
+                        <Grid>
+                            <Label
+                                Text="Battery Trend Chart Placeholder"
+                                TextColor="#BDBDBD"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center" />
+                        </Grid>
+                    </Border>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Spacing="10">
+                    <Label
+                        Text="Category Distribution"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        TextColor="#222222" />
+
+                    <Border BackgroundColor="White" HeightRequest="200" StrokeThickness="0">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="14" />
+                        </Border.StrokeShape>
+                        <Grid>
+                            <Label
+                                Text="Category Distribution Chart Placeholder"
+                                TextColor="#BDBDBD"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center" />
+                        </Grid>
+                    </Border>
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Grid
+            Grid.Row="1"
+            Padding="0,6,0,24"
+            BackgroundColor="#F5F5F5"
+            ColumnDefinitions="*,*,*">
+
+            <VerticalStackLayout Grid.Column="0" Spacing="2" HorizontalOptions="Center">
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnHomeClicked" />
+                </VerticalStackLayout.GestureRecognizers>
+                <Label Text="🏠" FontSize="24" HorizontalTextAlignment="Center" />
+                <Label Text="Home" FontSize="12" TextColor="#4CAF50" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="1" Spacing="2" HorizontalOptions="Center">
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnSettingsClicked" />
+                </VerticalStackLayout.GestureRecognizers>
+                <Label Text="⚙️" FontSize="24" HorizontalTextAlignment="Center" />
+                <Label Text="Settings" FontSize="12" TextColor="#636363" HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="2" Spacing="2" HorizontalOptions="Center">
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnAboutClicked" />
+                </VerticalStackLayout.GestureRecognizers>
+                <Label Text="ℹ️" FontSize="24" HorizontalTextAlignment="Center" />
+                <Label Text="About" FontSize="12" TextColor="#636363" HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+
+        </Grid>
+    </Grid>
+</ContentPage>
